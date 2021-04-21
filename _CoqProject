@@ -1,0 +1,84 @@
+#
+# © 2019 XXX.
+# 
+# SPDX-License-Identifier: MIT
+# 
+
+-Q src/ SPICY
+-R Frap/ Frap
+-Q protocols/ protocols
+
+# Frap Library Dependency
+Frap/Invariant.v
+Frap/Relations.v
+Frap/Sets.v
+
+src/AdversaryUniverse.v
+src/AdversarySafety.v
+src/Automation.v
+src/ChMaps.v
+src/IdealWorld.v
+src/Keys.v
+src/Maps.v
+src/MessageEq.v
+src/Messages.v
+src/MyPrelude.v
+src/RealWorld.v
+src/SafetyAutomation.v
+src/Simulation.v
+src/StepRelations.v
+src/SyntacticallySafe.v
+src/Tactics.v
+
+src/Theory/CipherTheory.v
+src/Theory/InvariantsTheory.v
+src/Theory/KeysTheory.v
+src/Theory/MessageEqTheory.v
+src/Theory/MessagesTheory.v
+src/Theory/NonceTracking.v
+src/Theory/UsersTheory.v
+
+src/ModelCheck/LabelsAlign.v
+src/ModelCheck/ModelCheck.v
+src/ModelCheck/NoResends.v
+src/ModelCheck/PartialOrderReduction.v
+src/ModelCheck/ProtocolAutomation.v
+src/ModelCheck/ProtocolFunctions.v
+src/ModelCheck/RealWorldStepLemmas.v
+src/ModelCheck/SafeProtocol.v
+src/ModelCheck/SilentStepElimination.v
+src/ModelCheck/UniverseEqAutomation.v
+
+# Test Protocols
+protocols/ExampleProtocols.v
+protocols/ExampleProtocolsAutomated.v
+protocols/GenProto.v
+protocols/GenProtoSS.v
+protocols/ProtocolTemplate.v
+
+# First set of test protocols: simple Secret Sharing Protocols
+protocols/ShareSecretProtocol.v
+protocols/ShareSecretProtocolTS.v
+protocols/ShareSecretProtocolSS.v
+
+# Protocol from example section of paper
+protocols/ShareSecretProtocolSymmetricEnc.v
+protocols/ShareSecretProtocolSymmetricEncIWRefine.v
+protocols/ShareSecretProtocolSymmetricEncTS.v
+protocols/ShareSecretProtocolSymmetricEncSS.v
+
+# PGP-like protocol
+protocols/PGP.v
+protocols/PGPTS.v
+protocols/PGPSS.v
+
+# A protocol akin to DNSCurve
+protocols/SecureDNS.v
+protocols/SecureDNSTS.v
+protocols/SecureDNSSS.v
+
+# A network aggregation protocol
+protocols/AvgSalary.v
+
+# A trusted third party network auth protocol
+protocols/P2P.v
